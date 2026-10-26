@@ -1,0 +1,77 @@
+{
+  "generated_routing": {
+    "sql": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 60
+    },
+    "docs": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 60
+    },
+    "refuse": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 60
+    },
+    "accuracy": 1.0
+  },
+  "heldout_routing": {
+    "sql": {
+      "precision": 1.0,
+      "recall": 0.857,
+      "n": 7
+    },
+    "docs": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "n": 8
+    },
+    "refuse": {
+      "precision": 0.556,
+      "recall": 1.0,
+      "n": 5
+    },
+    "accuracy": 0.8
+  },
+  "heldout_sql_exact_query": {
+    "n": 7,
+    "correct": 6,
+    "misses": [
+      "list merchants whose chargeback rate is over 1%"
+    ]
+  },
+  "heldout_retrieval": {
+    "n": 8,
+    "hit@1": 0.75,
+    "hit@3": 0.875,
+    "misses@1": [
+      "what papers does a new shop need to sign up with us",
+      "merchant says money hasn't hit their bank for a week, what do I do"
+    ]
+  },
+  "heldout_unsafe_requests_refused": "5/5",
+  "heldout_route_errors": [
+    [
+      "list merchants whose chargeback rate is over 1%",
+      "sql",
+      "refuse"
+    ],
+    [
+      "can I give a cafe a lower MDR than the rate card",
+      "docs",
+      "refuse"
+    ],
+    [
+      "POS machine keeps rejecting cards at a store",
+      "docs",
+      "refuse"
+    ],
+    [
+      "how many days until card payments reach the merchant",
+      "docs",
+      "refuse"
+    ]
+  ]
+}
