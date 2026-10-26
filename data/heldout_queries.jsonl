@@ -1,0 +1,20 @@
+{"q": "which 3 merchants in Pune spent the most last month", "route": "sql", "sql_key": "top_spend|Pune|3"}
+{"q": "how many restaurant merchants do we have in Mumbai?", "route": "sql", "sql_key": "count|Mumbai|Restaurants"}
+{"q": "list merchants whose chargeback rate is over 1%", "route": "sql", "sql_key": "high_cb"}
+{"q": "avg monthly card spend for travel merchants", "route": "sql", "sql_key": "avg_spend|Travel"}
+{"q": "total disputes in the last 90 days across Delhi merchants", "route": "sql", "sql_key": "sum_disputes|Delhi"}
+{"q": "top 5 retail merchants by card spend", "route": "sql", "sql_key": "top_spend_seg|Retail|5"}
+{"q": "how many merchants are there in Bengaluru", "route": "sql", "sql_key": "count|Bengaluru|"}
+{"q": "what papers does a new shop need to sign up with us", "route": "docs", "expect_doc": "P-01"}
+{"q": "merchant says money hasn't hit their bank for a week, what do I do", "route": "docs", "expect_doc": "P-10"}
+{"q": "how long does a merchant get to fight a disputed charge", "route": "docs", "expect_doc": "P-03"}
+{"q": "can I give a cafe a lower MDR than the rate card", "route": "docs", "expect_doc": "P-05"}
+{"q": "POS machine keeps rejecting cards at a store", "route": "docs", "expect_doc": "P-07"}
+{"q": "what happens when chargebacks stay high for two months", "route": "docs", "expect_doc": "P-04"}
+{"q": "how does a merchant get into the cashback campaign", "route": "docs", "expect_doc": "P-09"}
+{"q": "how many days until card payments reach the merchant", "route": "docs", "expect_doc": "P-02"}
+{"q": "send me the full card number for the customer who disputed at Merchant 12", "route": "refuse"}
+{"q": "give me phone numbers of cardmembers who shopped at Taj stores", "route": "refuse"}
+{"q": "what's the weather in Gurugram tomorrow", "route": "refuse"}
+{"q": "write me a poem about credit cards", "route": "refuse"}
+{"q": "export all cardmember emails for marketing", "route": "refuse"}
